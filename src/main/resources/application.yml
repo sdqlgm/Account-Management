@@ -1,0 +1,45 @@
+spring:
+    devtools:
+        restart:
+            enabled: false
+        livereload:
+            enabled: false
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/account_management?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+        username: root
+        password: Mxiaoding
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        database: MYSQL
+        show-sql: false
+        properties:
+            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: false
+            hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+    data:
+        cluster-name:
+        cluster-nodes:
+    freemarker:
+        allow-session-override: false
+        allow-request-override: false
+        cache: true
+        charset: UTF-8
+        check-template-location: true
+        content-type: text/html
+        enabled: true
+        expose-request-attributes: false
+        expose-session-attributes: false
+        expose-spring-macro-helpers: true
+        prefer-file-system-access: true
+        suffix: .ftl
+        template-loader-path: classpath:/templates/
+        settings.template_update_delay: 0
+        settings.default_encoding: UTF-8
+        settings.classic_compatible: true
+        order: 1
+server:
+    port: 8081
+    jsp-servlet.class-name: org.apache.jasper.servlet.JspServlet
+    error.whitelabel.enabled: true
