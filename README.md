@@ -20,6 +20,9 @@
 <br />
 <p><b>UI参考</b>：<a href="https://github.com/shuzheng/zheng" target="_blank">https://github.com/shuzheng/zheng</a></p>
 <br/>
+<p><h4>使用说明</h4></p>
+<p><b>数据库</b>：新建MySql数据库account_management，在application.yml文件中更改数据库密码。</p>
+<br/>
 <p><h4>关于作者</h4></p>
 <p><b>姓　　名</b>：马小丁</p>
 <p><b>电子邮箱</b>：maxiaoding@live.cn</p>
